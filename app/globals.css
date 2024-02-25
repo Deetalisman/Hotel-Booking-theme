@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: "poppin", sans-serif;
+}
+.userdetails {
+  background-color: rgb(61 86, 84);
+}
+.navlinks {
+  background-color: rgb(66, 92, 90);
+}
+.main {
+  background-color: rgb(225, 236, 235);
+}
+.pricetag {
+  top: -6px;
+  left: 3rem;
+}
+.pricetag1 {
+  top: -6px;
+  right: 3rem;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.pseud {
+  bottom: -1rem;
+  left: -1rem;
+}
+.pseudd {
+  bottom: -1rem;
+  right: -1rem;
+}
